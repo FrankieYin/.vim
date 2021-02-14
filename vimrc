@@ -2,14 +2,22 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
 " guifont
-set guifont=Fira\ Mono\ Medium\ 11
+set guifont=Fira\ Mono\ for\ Powerline\ Medium\ 11
 
+" GUI theme for gvim
 set bg=dark
 colorscheme gruvbox
+
+" airline
+let g:airline_powerline_fonts=1
+let g:airline_theme='base16_gruvbox_dark_hard'
 
 filetype indent on
 set showcmd
